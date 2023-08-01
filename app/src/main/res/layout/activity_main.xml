@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 上部のカレンダー -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <!-- 下部の登録内容表示スペース -->
+    <LinearLayout
+        android:id="@+id/registrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarView"
+        android:orientation="vertical">
+
+        <!-- トレーニングメニューボタン -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/trainingMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="トレーニングメニュー"
+                android:onClick="showTrainingMenu"
+                android:background="@drawable/button_background"/>
+
+        </LinearLayout>
+
+        <!-- 登録内容表示エリア -->
+        <TextView
+            android:id="@+id/registrationContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="トレーニング内容"
+            android:gravity="left"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <!-- 最下部のDBへ保存ボタン -->
+    <Button
+        android:id="@+id/saveToDBButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DBへ保存"
+        android:layout_alignParentBottom="true"
+        android:onClick="saveToDB"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

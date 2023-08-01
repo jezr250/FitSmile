@@ -1,0 +1,13 @@
+<resources>
+    <!-- トレーニングメニューの項目を定義 -->
+    <string-array name="training_menu_items">
+        <item>プッシュアップ</item>
+        <item>スクワット</item>
+        <item>腹筋</item>
+        <item>背筋</item>
+        <item>ストレッチ</item>
+        <item>ベンチプレス</item>
+        <item>ダンベルカール</item>
+        <item>体幹トレーニング</item>
+    </string-array>
+</resources>
